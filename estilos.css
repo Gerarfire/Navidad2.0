@@ -1,1 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#00111f, #003366);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding-top: 30px;
+}
+
+.escena {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin-top: 40px;
+}
+
+.arbol {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 180px;
+}
+
+.regalos {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 150px;
+}
+
+.perro {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 160px;
+}
+
+/* Nieve */
+.snowflake {
+    position: fixed;
+    top: -20px;
+    pointer-events: none;
+    animation-name: nieve;
+    animation-timing-function: linear;
+}
+
+@keyframes nieve {
+    from {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh) translateX(60px);
+        opacity: 0;
+    }
+}
 
